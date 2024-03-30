@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 export default function App({ Component, pageProps }: AppProps) {
   return <>
     <main className={clsx('min-h-screen', urbanist.variable, inter.variable)}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   </>
 }
