@@ -2,10 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-html, * {
-    font-family: var(--font-inter);
+html {
+    height: 100vh;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: var(--font-urbanist);
+html::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(
+        farthest-corner at 95% 5%,
+        #252525 0%,
+        #001310 100%
+    );
+}
+
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+html, * {
+    font-family: var(--font-body);
+    color: #BABABA;;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #fff;
+    line-height: 1.15 !important;
+}
+
+p {
+    line-height: 1.25 !important;
 }
