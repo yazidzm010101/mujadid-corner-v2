@@ -120,7 +120,7 @@ export default function Experience({ ...rest }) {
   return (
     <section
       id="experience"
-      className="min-h-[100vh] px-6 sm:px-10"
+      className="min-h-[100vh] w-full overflow-hidden px-6 sm:px-10"
       style={{ boxShadow: "0 0 100px -50px black" }}
       {...rest}
     >

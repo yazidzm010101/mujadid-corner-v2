@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function Hero({ ...rest }) {
   return (
     <section
-      className="max-w-screen-lg mx-auto min-h-[100vh] px-6 sm:px-10 py-12 grid sm:grid-cols-4 lg:grid-cols-2 gap-4"
+      className="w-full max-w-screen-lg mx-auto min-h-[100vh] px-6 sm:px-10 py-12 grid sm:grid-cols-4 lg:grid-cols-2 gap-4 overflow-hidden"
       {...rest}
     >
-      <div className="sm:col-span-3 lg:col-span-1">
+      <div className="col-span-1 sm:col-span-3 lg:col-span-1">
         {/* this the title */}
         <h1 className="text-4xl sm:text-6xl font-bold" data-aos="fade-right">
           Hello,

@@ -6,7 +6,7 @@ export default function About({ ...rest }) {
   return (
     <section
       id="about"
-      className="min-h-[100vh] bg-gradient-to-br from-[#1a1a1a] to-[#071b1b] overflow-hidden"
+      className="w-full min-h-[100vh] bg-gradient-to-br from-[#1a1a1a] to-[#071b1b] overflow-hidden"
       style={{ boxShadow: "0 0 100px -50px black" }}
       {...rest}
     >
