@@ -1,15 +1,30 @@
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import clsx from "clsx";
 import type { AppProps } from "next/app";
-import { Lexend, Lato } from "next/font/google";
+import { Lato, Lexend } from "next/font/google";
+import { useEffect } from "react";
 
-const lato = Lato({ subsets: ['latin'], variable: '--font-body', weight: '400' })
-const lexend = Lexend({ subsets: ["latin"], variable: '--font-heading' });
+// @ts-ignore
+import AOS from "aos";
+
+import "aos/dist/aos.css";
+
+const lato = Lato({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: "400",
+});
+const lexend = Lexend({ subsets: ["latin"], variable: "--font-heading" });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <>
-    <main className={clsx('min-h-screen', lato.variable, lexend.variable)}>
-      <Component {...pageProps} />
-    </main>
-  </>
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  return (
+    <>
+      <main className={clsx("min-h-screen", lato.variable, lexend.variable)}>
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
 }
