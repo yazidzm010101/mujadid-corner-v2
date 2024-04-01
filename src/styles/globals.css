@@ -4,6 +4,7 @@
 
 html {
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 html::before {
@@ -14,11 +15,9 @@ html::before {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: radial-gradient(
-        farthest-corner at 95% 5%,
-        #252525 0%,
-        #001310 100%
-    );
+    background-image: radial-gradient(farthest-corner at 95% 5%,
+            #252525 0%,
+            #001310 100%);
 }
 
 body {
@@ -29,17 +28,89 @@ body {
     overflow-y: auto;
 }
 
-html, * {
+html,
+* {
     font-family: var(--font-body);
-    color: #BABABA;;
+    color: #BABABA;
+    ;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: #fff;
     line-height: 1.15 !important;
 }
 
-p {
-    line-height: 1.25 !important;
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+    {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating-reverse {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.rotating-reverse {
+    -webkit-animation: rotating-reverse 2s linear infinite;
+    -moz-animation: rotating-reverse 2s linear infinite;
+    -ms-animation: rotating-reverse 2s linear infinite;
+    -o-animation: rotating-reverse 2s linear infinite;
+    animation: rotating-reverse 2s linear infinite;
 }
