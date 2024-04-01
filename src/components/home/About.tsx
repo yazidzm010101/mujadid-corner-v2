@@ -13,8 +13,8 @@ export default function About({ ...rest }) {
       <div className="max-w-screen-lg px-6 sm:px-10 py-12 mx-auto grid md:grid-cols-5 gap-4">
         <div className="sm:col-span-3 lg:col-span-3">
           {/* this the title */}
-          <h1 className="text-4xl sm:text-6xl  font-bold text-white">
-            <span className="inline-block" data-aos="fade-right">
+          <h1 className="text-4xl sm:text-6xl  font-bold">
+            <span className="inline-block text-white" data-aos="fade-right">
               About
             </span>
             <br />
@@ -49,7 +49,7 @@ export default function About({ ...rest }) {
               href={"#experience"}
               className="md:text-xl bg-[#00945F] text-white rounded-full px-5 md:px-7 md:py-3 py-2"
             >
-              See the experience
+              See his experience
             </Link>
           </div>
           <div className="flex gap-4 mt-4 flex-wrap" data-aos="fade-right">

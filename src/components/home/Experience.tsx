@@ -128,7 +128,7 @@ export default function Experience({ ...rest }) {
         <h1 className="text-4xl sm:text-6xl  font-bold text-[#7BFFCF]" data-aos="fade-right">
           Experience
         </h1>
-        <ul className="mt-10 md:mt-32 max-w-screen-md ms-auto">
+        <ul className="mt-10 md:mt-32 max-w-screen-md">
           {experienceData?.map((item, i) => (
             <ExperienceCard
               key={item.companyName + item.startDate + item.endDate}

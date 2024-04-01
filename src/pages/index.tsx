@@ -6,10 +6,11 @@ import { siteData } from "@/data/site";
 import Head from "next/head";
 
 export default function Home() {
+  const title = siteData.name.split(" ").reverse()[0] + "'s Corner"
   return (
     <>
       <Head>
-        <title>{siteData.name.split(" ").reverse()[0]}&apos;s Corner</title>
+        <title>{title}</title>
         <link rel="icon" href={siteData.favicon} sizes="any" />
       </Head>
       <Layout>

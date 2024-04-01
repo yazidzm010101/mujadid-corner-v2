@@ -46,28 +46,24 @@ export default function Hero({ ...rest }) {
         </div>
       </div>
       {/* This is some cute clipart that represent the authors */}
-      <div className="hidden lg:block col-span-1 relative pt-24">
+      <div className="hidden lg:block col-span-1 relative pt-24" data-aos="zoom-in">
         <div
           className="absolute w-[75%] left-1/2 -translate-x-1/2"
-          data-aos="zoom-in"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tux_Enhanced.svg/154px-Tux_Enhanced.svg.png"
             alt="clip-art-tux-linux"
             className="-rotate-6 origin-center absolute w-[40%] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            loading="lazy"
           />
           <img
             src="https://firebasestorage.googleapis.com/v0/b/mujadid-corner.appspot.com/o/10638163.webp?alt=media"
             alt="clip-art-curious-monkey"
             className="rotate-6 origin-center absolute w-[40%] right-0 top-1/2 translate-x-1/2 -translate-y-1/2"
-            loading="lazy"
           />
           <img
             src="https://cdn3d.iconscout.com/3d/premium/thumb/matcha-8147961-6478159.png"
             alt="clip-art-matcha"
             className="rotate-3 origin-center relative w-full"
-            loading="lazy"
           />
         </div>
       </div>
